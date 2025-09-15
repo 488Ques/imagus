@@ -3,7 +3,7 @@ import { serveStatic } from "hono/bun";
 import { streamSSE } from "hono/streaming";
 import { patchElements, patchSignals, send } from "@/libs/datastar";
 import { Home } from "./components/home/Home";
-import { PostDetails } from "./components/posts/PostDetails";
+import { PostDetails } from "./components/posts/Post";
 
 const app = new Hono();
 
@@ -15,7 +15,7 @@ app.get("/", (c) => {
 
 app.get("/posts/:id", (c) => {
   const id = c.req.param("id");
-  return c.html(<PostDetails id={id} />);
+  return c.html(<PostDetails id={Number(id)} />);
 });
 
 app.get("/sse", async (c) => {

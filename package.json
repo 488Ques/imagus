@@ -24,8 +24,10 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "daisyui": "^5.1.10",
+    "@iconify-json/lucide": "^1.2.68",
+    "@iconify/utils": "^3.0.2",
     "clsx": "^2.1.1",
+    "daisyui": "^5.1.10",
     "date-fns": "^4.1.0",
     "hono": "^4.9.1",
     "kysely": "^0.28.5",

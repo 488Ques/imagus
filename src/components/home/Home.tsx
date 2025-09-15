@@ -1,7 +1,7 @@
 import { generateRandomString } from "@/libs/string";
-import { AppSidebar } from "../layout/AppSidebar";
 import { AppTemplate } from "../layout/AppTemplate";
 import { Post } from "./Post";
+import { AppSidebar } from "./Sidebar";
 
 /* <Layout>
       <div class="flex flex-col gap-y-2 p-4">
